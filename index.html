@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    img {
+        width: 45%;
+        margin: 2%;
+        background: #eee;
+        border-radius: 2rem;
+    }
+    img.second {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: pixelated;
+    }
+</style>
+<body>
+    <img src="may.png" alt="">
+    <img class="second" src="may.png" alt="">
+</body>
+</html>
