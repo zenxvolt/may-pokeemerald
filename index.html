@@ -12,20 +12,33 @@
     }
     body {
         width: 100%;
+        height: 100vh;
         display: flex;
         justify-content: space-evenly;
     }
     img {
         width: 45%;
-        margin: 2%;
         background: #eee;
         border-radius: 2rem;
+        object-fit: contain;
     }
     img.second {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: -moz-crisp-edges;
         image-rendering: -o-crisp-edges;
         image-rendering: pixelated;
+    }
+
+    @media (orientation: portrait) {
+        body {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        img {
+            width: 90%;
+            border-radius: 5%;
+        }
     }
 </style>
 <body>
